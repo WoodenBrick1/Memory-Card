@@ -1,22 +1,29 @@
 
 header {
     background-color: rgba(0,0,0, 15%);
+    color: white;
 
     text-align: center;
 
     position: relative;
 
     padding: 10px;
+
+   font-family: "Owl", "sans-serif";
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+
 }
 
 .score {
+
     position: absolute;
     top: 100%;
-    color: rgb(48, 47, 47);
+    color: rgb(228, 227, 227);
+
+    font-size: 2rem;
 
     display: flex;
     flex-direction: column;

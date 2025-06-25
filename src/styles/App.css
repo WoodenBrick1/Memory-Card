@@ -5,14 +5,14 @@
 }
 
 @font-face {
-    font-family: "Adventure";
-    src: url("../assets/Adventure_Time_Logo.ttf");
+    font-family: "Owl";
+    src: url("../assets/Heraldic_Shadows.otf");
 }
 
 :root {
     font-size: 16px;
+    
 }
 body {
-    font-family: "Adventure", "sans-serif";
-    background-color: #F5BB12
+    background-color: rgb(17, 16, 16);
 }
