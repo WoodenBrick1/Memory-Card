@@ -17,6 +17,8 @@ function shuffle(array) {
 export default function Cards() {
     const [cardsData, setCardsData] = useState([]);
 
+    // Get the Owl House data when the game starts
+
     useEffect(() => {
         fetch("https://api.disneyapi.dev/character?tvShows=The%20Owl%20House")
         .then(response => response.json())
@@ -30,15 +32,17 @@ export default function Cards() {
     }, [])
 
     shuffle(cardsData)
+    cardsData.splice(8,8)
     const cards = cardsData.map(card => {
         return (
-        <div className="card" key={card.name}>
+        <button className="card" key={card.name}>
             <img src={card.imageUrl}></img>
             <p className="cardName">{card.name}</p>
-        </div>)
+        </button>)
     })
+
     return (
-    <div id="class-container"> 
+    <div id="cards-container"> 
        {cards}
     </div>)
 }
